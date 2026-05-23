@@ -3,11 +3,11 @@
 
 int main(void)
 {
-  /* Para reconhecer os caracteres especiais */
+  // Para reconhecer os caracteres especiais 
   setlocale(LC_ALL, "pt_BR.UTF-8");
   setlocale(LC_NUMERIC, "C");
 
-    /* Para armazenar os dados da primeira carta 1 e 2 */
+    // Para armazenar os dados da primeira carta 1 e 2
 
     char estado1, estado2;
     char codigo1[5], codigo2[5];
@@ -17,7 +17,7 @@ int main(void)
     float pib1, pib2;
     int pontosTuristicos1, pontosTuristicos2;
 
-    /* Leitura dos dados da Carta 1 */
+    // Leitura dos dados da Carta 1
 
     printf("Cadastro da Carta 1:\n");
     printf("Informe o Estado (A-H): ");
@@ -41,7 +41,7 @@ int main(void)
     printf("Informe o número de pontos turísticos: ");
     scanf("%d", &pontosTuristicos1);
 
-    /* Leitura dos dados da Carta 2 */
+    // Leitura dos dados da Carta 2
 
     printf("\nCadastro da Carta 2:\n");
     printf("Informe o Estado (A-H): ");
@@ -66,7 +66,7 @@ int main(void)
     scanf("%d", &pontosTuristicos2);
 
 
-    /* Exibicao dos dados cadastrados para Carta 1 */
+    // Exibicao dos dados cadastrados para Carta 1
 
     printf("\nCarta 1:\n");
     printf("Estado: %c\n", estado1);
@@ -77,7 +77,7 @@ int main(void)
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
 
-    /* Exibicao dos dados cadastrados para Carta 2 */
+    // Exibicao dos dados cadastrados para Carta 2
 
     printf("\nCarta 2:\n");
     printf("Estado: %c\n", estado2);
