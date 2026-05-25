@@ -15,6 +15,8 @@ int main(void)
     int populacao1, populacao2;
     float area1, area2;
     float pib1, pib2;
+    float densidade1, densidade2;
+    float pibPerCapita1, pibPerCapita2;
     int pontosTuristicos1, pontosTuristicos2;
 
     // Leitura dos dados da Carta 1
