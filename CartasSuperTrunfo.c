@@ -3,11 +3,11 @@
 
 int main(void)
 {
-  // Para reconhecer os caracteres especiais 
+  /* Para reconhecer os caracteres especiais */
   setlocale(LC_ALL, "pt_BR.UTF-8");
   setlocale(LC_NUMERIC, "C");
 
-    // Para armazenar os dados da primeira carta 1 e 2 
+    /* Para armazenar os dados da primeira carta 1 e 2 */
 
     char estado1, estado2;
     char código1[5], código2[5];
@@ -22,7 +22,7 @@ int main(void)
     int venceuPopulação, venceuArea, venceuPib, venceuPontos, venceuDensidade;
     int venceuPibPerCapita, venceuSuperPoder;
 
-    // Leitura dos dados da Carta 1 
+    /* Leitura dos dados da Carta 1 */
 
     printf("Cadastro da Carta 1:\n");
     printf("Informe o Estado (A-H): ");
@@ -50,7 +50,7 @@ int main(void)
     pibPerCapita1 = (pib1 * 1000) / população1; // Convertendo PIB para milhões de reais e calculando per capita
     superPoder1 = (float) população1 + area1 + pib1 + pontosTurísticos1 + pibPerCapita1 + (1.0f / densidade1);
 
-    // Leitura dos dados da Carta 2
+    /* Leitura dos dados da Carta 2 */
 
     printf("\nCadastro da Carta 2:\n");
     printf("Informe o Estado (A-H): ");
@@ -86,7 +86,7 @@ int main(void)
     venceuPibPerCapita = (pibPerCapita1 > pibPerCapita2) ? 1 : 0;
     venceuSuperPoder = (superPoder1 > superPoder2) ? 1 : 0;
 
-    // Exibição dos dados cadastrados para Carta 1
+    /* Exibição dos dados cadastrados para Carta 1 */
 
     printf("\nCarta 1:\n");
     printf("Estado: %c\n", estado1);
@@ -99,8 +99,7 @@ int main(void)
     printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
     printf("PIB per Capita: %.2f mil reais\n", pibPerCapita1);
     printf("Super Poder: %.2f\n", superPoder1);
-    
-    // Exibição dos dados cadastrados para Carta 2
+    /* Exibição dos dados cadastrados para Carta 2 */
 
     printf("\nCarta 2:\n");
     printf("Estado: %c\n", estado2);
